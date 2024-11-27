@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #555;
+    }
+    .navbar li {
+      padding: 1rem;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 1rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background: #0056b3;
+    }
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Car Rental Application</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cars</a></li>
+      <li><a href="#">Bookings</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Available Cars</h2>
+    <div class="grid">
+      <!-- Car Card 1 -->
+      <div class="card">
+        <img src="car1.jpg" alt="Car 1" style="width: 100%; border-radius: 5px;">
+        <h3>Car Model 1</h3>
+        <p>Type: SUV</p>
+        <p>Price: $50/day</p>
+        <button class="button">Book Now</button>
+      </div>
+
+      <!-- Car Card 2 -->
+      <div class="card">
+        <img src="car2.jpg" alt="Car 2" style="width: 100%; border-radius: 5px;">
+        <h3>Car Model 2</h3>
+        <p>Type: Sedan</p>
+        <p>Price: $40/day</p>
+        <button class="button">Book Now</button>
+      </div>
+
+      <!-- Car Card 3 -->
+      <div class="card">
+        <img src="car3.jpg" alt="Car 3" style="width: 100%; border-radius: 5px;">
+        <h3>Car Model 3</h3>
+        <p>Type: Hatchback</p>
+        <p>Price: $30/day</p>
+        <button class="button">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Car Rental App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
